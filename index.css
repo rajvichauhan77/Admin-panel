@@ -1,0 +1,473 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.fix{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+}
+.fix2{
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    z-index: 10;
+    top: 65px;
+}
+
+.fix3{
+   margin-left: 200px;
+   transition: margin-left 1s;
+}
+.fixing3{
+    margin-left:50px;
+    transition: margin-left 1s;
+}
+.fix4{
+    margin-top: 70px;
+}
+
+
+.border{
+    border: 1px solid gray;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.container{
+    max-width: 100%;
+    
+}
+
+
+.admin1{
+    width:200px;
+    padding: 5px;
+    overflow: hidden;
+    transition: width 1s;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.admin-text{
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+   
+}
+.admin-text i{
+    font-size: 30px;
+}
+.admin-text h1{
+    font-size: 30px;
+}
+
+.admin2{
+    width: 100%;
+    padding: 10px;
+   
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.icon-1{
+    width:5%;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.icon-2{
+    width:200px;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.jhon-click{
+    border: 1px solid purple; 
+    background-color:ghostwhite;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* left: 80%; */
+    top: 100%;
+}
+.jhon{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.jhon img{
+    width: 15%;
+    height: 35px;
+    border-radius: 50px;
+}
+.jhon h3{
+    font-size: 20px;
+}
+.j-btn{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.j-btn button{
+    width: 30%;
+    padding: 10px 10px;
+    font-size: 15px;
+    background-color:rgba(9, 9, 55, 0.73);
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+.j-btn button:hover{
+    background-color: transparent;
+    color:rgba(9, 9, 55, 0.73);
+    border: 1px solid black;
+}
+
+.container-2{
+    max-width: 100%;
+}
+
+.admin-list{
+    width: 200px;
+    padding: 10px;
+    overflow: hidden;
+    transition: width 1s;
+}
+
+.list{
+    padding: 10px;
+    /* flex-wrap: wrap; */
+}
+.list i{
+    font-size: 20px;
+}
+.list p{
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.hide{
+    width: 50px;
+}
+
+.admin-map{
+    width: 100%;
+}
+
+.map1{
+    width: 100%;
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.m1{
+ 
+    width: 25% ;
+    height: 100px; 
+    padding: 10px;
+}
+.subm1{
+       border: 1px solid gray;
+}
+.m1-title{
+    width: 100%;
+    padding: 5px;
+   
+    
+}
+.m1-img{
+    width: 100%;
+
+}
+.m1-img img{
+    width: 100%;
+    height:50px ;
+}
+
+
+.admin-map1{
+    width:100% ;
+    
+}
+
+.sub-map{
+    width: 100%;
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s-m1{
+    width: 70%;
+    border: 1px solid green;
+    padding: 10px;
+   
+}
+.s-m1 iframe{
+    width: 100%;
+    height:500px ;
+    border-radius: 10px;
+}
+
+.s-m2{
+    width: 30%;
+    border: 1px solid green;
+    padding: 10px;
+   
+}
+.s-info{
+    border: 1px solid red;
+    padding: 5px;
+    
+}
+.info-1{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid purple;
+    font-size: 15px;
+}
+
+
+
+#container{
+    margin: 10px;
+    width: 90%;
+    height: 8px;
+    
+
+  }
+
+  #container2{
+    margin: 10px;
+    width: 90%;
+    height: 8px;
+    
+  }
+  #container3{
+    margin: 10px;
+    width: 90%;
+    height: 8px;
+    
+  }
+  #container4{
+    margin: 10px;
+    width: 90%;
+    height: 8px;
+    
+  }
+
+  #container > svg>path:first-child{
+    stroke-dasharray: 100, 100 !important;
+}
+
+#container > svg>path:last-child{
+    stroke-dasharray: 50, 100 !important;
+}
+#container2 > svg>path:first-child{
+    stroke-dasharray: 100, 100 !important;
+}
+
+#container2 > svg>path:last-child{
+    stroke-dasharray: 80, 100 !important;
+}
+#container3 > svg>path:first-child{
+    stroke-dasharray: 100, 100 !important;
+}
+
+#container3 > svg>path:last-child{
+    stroke-dasharray: 40, 100 !important;
+}
+#container4 > svg>path:first-child{
+    stroke-dasharray: 100, 100 !important;
+}
+
+#container4 > svg>path:last-child{
+    stroke-dasharray: 90, 100 !important;
+}
+
+
+  .s-info1{
+    border: 1px solid red;
+    padding: 5px;
+    width: 100%;
+}
+
+.widget {
+    margin: 0 auto;
+    width:30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+#chart-1 svg{
+    transform: translateX(-5px);
+    
+   
+}
+#chart-2 svg{
+    transform: translateX(-5px);
+    
+}
+
+#chart-3 svg{
+    transform: translateX(-5px);
+    
+}
+
+
+.chart-container{
+
+    width: 100%;
+    height: 150px;
+    border: 1px solid orange;
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
+    filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
+}
+
+  
+
+
+
+
+
+.admin-graph{
+    width: 100%;
+}
+
+.graph{
+    width: 100%;
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.graph-img{
+    width: 55%;
+    border: 1px solid green;
+    height: 350px;
+
+}
+
+#chart{
+    width: 100%;
+    height: 300px;
+}
+
+
+.graph-data{
+    width: 40%;
+    border: 1px solid green;
+    height: 350px;
+    padding: 10px;
+}
+.graph-data h5{
+    color: gray;
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+.cheak-box{
+    border: 1px solid green;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    
+}
+.cheak-1{
+    width: 100%;
+    display: flex;
+}
+.cheak-1 input{
+    padding-left: 10px;
+    padding:5px;
+    
+}
+.cheak-1 p{
+    padding-left: 10px;
+    padding: 5px;
+    
+}
+
+
+.weather-table{
+    width: 100%;
+}
+
+.main-table{
+    width: 100%;
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.table-1{
+    width: 55%;
+    border: 1px solid green;
+    height: 400px;
+    padding: 10px;
+   
+}
+.table-1 h4{
+    color:rgba(64, 62, 62, 0.871);
+}
+.t1{
+    width: 100%;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+
+.table-2{
+    width: 40%;
+    border: 1px solid green;
+    height: 400px;
+  
+}
+
+
+
+#chartIcon{
+
+  width: 100px;
+  transform: translateY(-50%);
+
+}
+
+
+#chartIcon1{
+
+  width: 100px;
+  transform: translateY(-50%);
+
+}
+
+.apexcharts-toolbar{
+    display: none !important;
+}
+.apexcharts-xaxis
+{
+    display: none !important;
+}
