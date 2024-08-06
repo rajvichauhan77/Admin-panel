@@ -64,6 +64,7 @@
 }
 .admin-text h1{
     font-size: 30px;
+    color: rgb(74, 70, 70);
 }
 
 .admin2{
@@ -153,10 +154,18 @@
 .list i{
     font-size: 20px;
 }
-.list p{
+.list a p{
     font-size: 20px;
     padding-left: 50px;
 }
+.list a{
+    text-decoration: none;
+    color: gray;
+}
+.list a p:hover{
+   color: black;
+}
+
 
 .hide{
     width: 50px;
@@ -191,13 +200,22 @@
 }
 .m1-img{
     width: 100%;
-
+    display: flex;
+    justify-content: space-between;
+    
 }
+
 .m1-img img{
-    width: 100%;
+    width: 20%;
     height:50px ;
+    
 }
-
+.m1-img p{
+    width: 20%;
+   color: black;
+   border-radius: 20px;
+   text-align: center;
+}
 
 .admin-map1{
     width:100% ;
@@ -206,7 +224,7 @@
 
 .sub-map{
     width: 100%;
-    border: 1px solid red;
+   
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -214,7 +232,7 @@
 
 .s-m1{
     width: 70%;
-    border: 1px solid green;
+    border: 1px solid gray;
     padding: 10px;
    
 }
@@ -226,19 +244,20 @@
 
 .s-m2{
     width: 30%;
-    border: 1px solid green;
+    border: 1px solid gray;
     padding: 10px;
    
 }
 .s-info{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 5px;
+    color: rgb(84, 80, 80);
     
 }
 .info-1{
     display: flex;
     justify-content: space-between;
-    border: 1px solid purple;
+    
     font-size: 15px;
 }
 
@@ -302,7 +321,7 @@
 
 
   .s-info1{
-    border: 1px solid red;
+   
     padding: 5px;
     width: 100%;
 }
@@ -330,13 +349,16 @@
     transform: translateX(-5px);
     
 }
-
+#chart-3 text{
+    display: none;
+}
 
 .chart-container{
-
+    margin-top: 20px;
     width: 100%;
     height: 150px;
-    border: 1px solid orange;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
 }
 
 .shadow {
@@ -356,7 +378,6 @@
 
 .graph{
     width: 100%;
-    border: 1px solid red;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -365,7 +386,7 @@
 
 .graph-img{
     width: 55%;
-    border: 1px solid green;
+    border: 1px solid gray;
     height: 350px;
 
 }
@@ -378,9 +399,9 @@
 
 .graph-data{
     width: 40%;
-    border: 1px solid green;
+    border: 1px solid gray;
     height: 350px;
-    padding: 10px;
+    padding: 5px;
 }
 .graph-data h5{
     color: gray;
@@ -388,7 +409,7 @@
     padding-bottom: 15px;
 }
 .cheak-box{
-    border: 1px solid green;
+    
     padding: 10px;
     width: 100%;
     display: flex;
@@ -416,7 +437,7 @@
 
 .main-table{
     width: 100%;
-    border: 1px solid red;
+    
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -425,8 +446,7 @@
 
 .table-1{
     width: 55%;
-    border: 1px solid green;
-    height: 400px;
+    border: 1px solid gray;  
     padding: 10px;
    
 }
@@ -435,19 +455,35 @@
 }
 .t1{
     width: 100%;
-    border: 1px solid red;
-    padding: 10px;
+    padding: 20px;
 }
+
 
 
 .table-2{
     width: 40%;
-    border: 1px solid green;
-    height: 400px;
-  
+    border: 1px solid gray;
+    /* height: 400px; */
+
 }
-
-
+.t2{
+    color: rgb(69, 67, 67);
+    padding: 10px;
+}
+.t3{
+    padding: 20px;
+}
+.t4{
+    padding: 20px;
+}
+.t4 thead tr th{
+    padding-bottom: 10px;
+    border-bottom:  1px solid gray;
+}
+.t4 tbody tr td{
+    padding: 5px;
+    border-bottom:  1px solid gray;
+}
 
 #chartIcon{
 
@@ -471,3 +507,4 @@
 {
     display: none !important;
 }
+
