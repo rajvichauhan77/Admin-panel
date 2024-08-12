@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+
+    <link rel="stylesheet" href="CSS/calender.css">
+
+    <link rel="stylesheet" href="media.css">
+
+   
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+   
+
+</head>
+<body>
+   
+    <section>
+        <div class="container border d-flex fix">
+           <div class="admin1 border hide ">
+                <div class="admin-text  d-flex ">
+                    <i class="ri-account-circle-fill"></i>
+                    <h1>Adminator</h1>
+                </div>
+           </div> 
+           <div class="admin2 d-flex border  fix3 fixing3 ">
+                <div class="icon-1 d-flex">
+                    <i class="ri-menu-fill " id="logo"></i>
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="icon-2  d-flex">
+                    <i class="ri-notification-2-line"></i>
+                    <i class="ri-mail-line"></i>
+                    <i class="ri-user-3-fill " id="user1"></i>
+                     <div class="jhon-click">
+                        <div class="jhon">
+                          <img src="https://banner2.cleanpng.com/20180522/wll/kisspng-logo-black-white-font-apropoe-s-5b03bdd117fc68.8758133115269718570983.jpg" alt="">
+                          <h3>John Doe</h3>
+                        </div>
+                        <div class="j-btn">
+                          <button>Login</button>
+                        </div>
+                    </div>
+                    <h4>John Doe</h4>
+
+                </div>
+
+               
+
+           </div>
+        </div>
+    </section>
+
+    <section>
+    <div class="container-2 border d-flex ">
+
+        <div class="admin-list border hide fix2">
+            <div class="list d-flex ">
+                <i class="ri-home-4-line" style="color: blue;"></i>
+                <a href="index.html"><p>Dashboard</p>  </a> 
+            </div>
+            <div class="list d-flex">
+                <i class="ri-mail-line" style="color: brown;"></i>
+                <a href=""><p>Email</p></a>   
+            </div>
+            <div class="list d-flex">
+                <i class="ri-compass-discover-line" style="color: blue;"></i>
+                <a href=""><p>Compose</p></a>   
+            </div>
+            <div class="list d-flex ">
+                <i class="ri-calendar-line" style="color: red;"></i>
+                <a href="calender.html"><p>Calender</p></a>   
+            </div>
+            <div class="list d-flex">
+                <i class="ri-message-2-line" style="color: purple;"></i>
+                <a href=""><p>Chat</p> </a>  
+            </div>
+            <div class="list d-flex ">
+                <i class="ri-bar-chart-fill" style="color: blueviolet;"></i>
+                <a href="chart.html"><p>Charts</p></a>   
+            </div>
+            <div class="list d-flex ">
+                <i class="ri-edit-fill" style="color: blue;"></i>
+                <a href=""><p>Forms</p></a>   
+            </div>
+            <div class="list d-flex ">
+                <i class="ri-palette-line" style="color: red;"></i>
+                <a href=""><p>UI Elements</p></a>   
+            </div>
+            <div class="list d-flex ">
+                <i class="ri-table-line" style="color: orange;"></i>
+                <a href=""><p>Table</p> </a>  
+            </div>
+            <div class="list d-flex ">
+                <i class="ri-map-2-line" style="color: purple;"></i>
+                <a href=""><p>Maps</p> </a>  
+            </div>
+            <div class="list d-flex ">
+                <i class="ri-pages-line" style="color: red;"></i>
+                <a href=""><p>Pages</p> </a>  
+            </div>
+            <div class="list d-flex ">
+                <i class="ri-stairs-line" style="color: green;"></i>
+                <a href=""><p>Multiple levels</p>   </a>
+            </div>
+        </div>
+
+
+        <div class="calender">
+            <div class="c-main">
+                <div class="c1">
+
+                    <div class="container-01">
+                        <h2>TODO LIST</h2>
+                        <h3>Add Item</h3>
+                        <p>
+                            <input id="new-task" type="text"><button>Add</button>
+                        </p>
+                
+                        <h3>Todo</h3>
+                        <ul id="incomplete-tasks">
+                            <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                            <li><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                        </ul>
+                
+                        <h3>Completed</h3>
+                        <ul id="completed-tasks">
+                            <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                        </ul>
+                    </div>
+                 
+                       
+                 </div>
+                    
+                    
+
+                
+                <div class="c2">
+                       
+                    <section id="frame">
+                        <div id="calendar">
+                          <header>
+                            <pre class="arrow left">◀</pre>
+                            <div class="header-display">
+                              <p id="display"></p>
+                            </div>
+                            <pre class=" arrow right">▶</pre>
+                          </header>
+                      
+                          <div class="week">
+                            <div>Su</div>
+                            <div>Mo</div>
+                            <div>Tu</div>
+                            <div>We</div>
+                            <div>Th</div>
+                            <div>Fr</div>
+                            <div>Sa</div>
+                          </div>
+                          <div id="days"></div>
+                        </div>
+                      </section>
+                      
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/index.min.js"></script>
+
+
+
+    <script>
+        $("#logo").click(function(){
+            $(".admin-list").toggleClass("hide")
+            $(".admin1").toggleClass("hide");
+            $(".fix3").toggleClass("fixing3")
+        });
+
+
+    </script>
+
+    <script>
+      $("#user1").click(function(){
+        $(".jhon-click").toggle()
+      })
+    </script>
+
+    <script>
+
+let display = document.querySelector("#display");
+let days = document.querySelector("#days");
+let previous = document.querySelector(".left");
+let next = document.querySelector(".right");
+
+let date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth();
+
+function calendar() {
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  let firstDayIndex = firstDay.getDay();
+  let numberOfDays = lastDay.getDate();
+  let nextDays = new Date(year, month, numberOfDays).getDay();
+  display.textContent = date.toLocaleString("en-US", {
+    month: "long",
+    year: "numeric"
+  });
+
+  for (let i = 1; i <= firstDayIndex; i++) {
+    const div = document.createElement("div");
+    div.textContent += i;
+    div.className = "inactive";
+    days.appendChild(div);
+  }
+
+  for (let j = 1; j <= numberOfDays; j++) {
+    let div = document.createElement("div");
+    let currDate = new Date(year, month, j);
+    div.dataset.date = currDate.toDateString();
+    div.textContent += j;
+    days.appendChild(div);
+    if (
+      currDate.getFullYear() === new Date().getFullYear() &&
+      currDate.getMonth() === new Date().getMonth() &&
+      currDate.getDate() === new Date().getDate()
+    ) {
+      div.classList.add("current-date");
+    }
+  }
+
+  for (let i = nextDays; i < 6; i++) {
+    const div = document.createElement("div");
+    div.textContent += i - nextDays + 1;
+    div.className = "inactive";
+    days.appendChild(div);
+  }
+}
+calendar();
+
+previous.addEventListener("click", () => {
+  days.innerHTML = "";
+  if (month < 0) {
+    month = 11;
+    year--;
+  }
+  month--;
+  date.setMonth(month);
+  calendar();
+});
+
+next.addEventListener("click", () => {
+  days.innerHTML = "";
+  if (month > 11) {
+    month = 0;
+    year++;
+  }
+  month++;
+  date.setMonth(month);
+  calendar();
+});
+
+
+    </script>
+
+
+<script>
+
+var taskInput = document.getElementById("new-task"); //new-task
+var addButton = document.getElementsByTagName("button")[0]; //first button
+var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
+var completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
+
+//New Task List Item
+var createNewTaskElement = function(taskString) {
+	//Create List Item
+	var listItem = document.createElement("li");
+
+	//input (checkbox)
+	var checkBox = document.createElement("input"); // checkbox
+	//label
+	var label = document.createElement("label");
+	//input (text)
+	var editInput = document.createElement("input"); // text
+	//button.edit
+	var editButton = document.createElement("button");
+	//button.delete
+	var deleteButton = document.createElement("button");
+
+	//Each element needs modifying
+
+	checkBox.type = "checkbox";
+	editInput.type = "text";
+
+	editButton.innerText = "Edit";
+	editButton.className = "edit";
+	deleteButton.innerText = "Delete";
+	deleteButton.className = "delete";
+
+	label.innerText = taskString;
+
+	//Each element needs appending
+	listItem.appendChild(checkBox);
+	listItem.appendChild(label);
+	listItem.appendChild(editInput);
+	listItem.appendChild(editButton);
+	listItem.appendChild(deleteButton);
+
+	return listItem;
+}
+
+//Add a new task
+var addTask = function() {
+	console.log("Add task...");
+	//Create a new list item with the text from #new-task:
+	var listItem = createNewTaskElement(taskInput.value);
+	//Append listItem to incompleteTasksHolder
+	incompleteTasksHolder.appendChild(listItem);
+	bindTaskEvents(listItem, taskCompleted);
+
+	taskInput.value = "";
+}
+
+//Edit an existing task
+var editTask = function() {
+	console.log("Edit task...");
+
+	var listItem = this.parentNode;
+
+	var editInput = listItem.querySelector("input[type=text");
+	var label = listItem.querySelector("label");
+
+	var containsClass = listItem.classList.contains("editMode");
+
+	//if the class of the parent is .editMode
+	if (containsClass) {
+		//Switch from .editMode
+		//label text become the input's value
+		label.innerText = editInput.value;
+	} else {
+		//Switch to .editMode
+		//input value becomes the label's text
+		editInput.value = label.innerText;
+	}
+
+	//Toggle .editMode on the list item
+	listItem.classList.toggle("editMode");
+
+}
+
+//Delete an existing task
+var deleteTask = function() {
+	console.log("Delete task...");
+	var listItem = this.parentNode;
+	var ul = listItem.parentNode;
+
+	//Remove the parent list item from the ul
+	ul.removeChild(listItem);
+}
+
+//Mark a task as complete
+var taskCompleted = function() {
+	console.log("Task complete...");
+	//Append the task list item to the #completed-tasks
+	var listItem = this.parentNode;
+	completedTasksHolder.appendChild(listItem);
+	bindTaskEvents(listItem, taskIncomplete);
+}
+
+//Mark a task as incomplete
+var taskIncomplete = function() {
+	console.log("Task incomplete...");
+	//Append the task list item to the #incomplete-tasks
+	var listItem = this.parentNode;
+	incompleteTasksHolder.appendChild(listItem);
+	bindTaskEvents(listItem, taskCompleted);
+}
+
+var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
+	console.log("Bind list item events");
+	//select taskListItem's children
+	var checkBox = taskListItem.querySelector("input[type=checkbox]");
+	var editButton = taskListItem.querySelector("button.edit");
+	var deleteButton = taskListItem.querySelector("button.delete");
+
+	//bind editTask to edit button
+	editButton.onclick = editTask;
+
+	//bind deleteTask to delete button
+	deleteButton.onclick = deleteTask;
+
+	//bind checkBoxEventHandler to checkbox
+	checkBox.onchange = checkBoxEventHandler;
+}
+
+// var ajaxRequest = function() {
+// 	console.log("AJAX request");
+// }
+
+//Set the click handler to the addTask function
+addButton.addEventListener("click", addTask);
+//addButton.addEventListener("click", ajaxRequest);
+
+//cycle over incompleteTasksHolder ul list items
+for (var i = 0; i < incompleteTasksHolder.children.length; i++) {
+	//bind events to list item's children (taskCompleted)
+	bindTaskEvents(incompleteTasksHolder.children[i], taskCompleted);
+}
+
+//cycle over completedTasksHolder ul list items
+for (var i = 0; i < completedTasksHolder.children.length; i++) {
+	//bind events to list item's children (taskIncomplete)
+	bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
+}
+
+</script>
+
+    
+</body>
+</html>

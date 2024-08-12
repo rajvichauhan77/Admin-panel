@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+
+    <link rel="stylesheet" href="CSS/chart.css">
+    
+
+    <link rel="stylesheet" href="media.css">
+
+     
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+
+</head>
+
+<body>
+    
+    <section>
+        <div class="container border d-flex fix">
+           <div class="admin1 border hide ">
+                <div class="admin-text  d-flex ">
+                    <i class="ri-account-circle-fill"></i>
+                    <h1>Adminator</h1>
+                </div>
+           </div> 
+           <div class="admin2 d-flex border  fix3 fixing3 ">
+                <div class="icon-1 d-flex">
+                    <i class="ri-menu-fill " id="logo"></i>
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="icon-2  d-flex">
+                    <i class="ri-notification-2-line"></i>
+                    <i class="ri-mail-line"></i>
+                    <i class="ri-user-3-fill " id="user1"></i>
+                     <div class="jhon-click">
+                        <div class="jhon">
+                          <img src="https://banner2.cleanpng.com/20180522/wll/kisspng-logo-black-white-font-apropoe-s-5b03bdd117fc68.8758133115269718570983.jpg" alt="">
+                          <h3>John Doe</h3>
+                        </div>
+                        <div class="j-btn">
+                          <button>Login</button>
+                        </div>
+                    </div>
+                    <h4>John Doe</h4>
+
+                </div>
+
+               
+
+           </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-2 border d-flex ">
+    
+            <div class="admin-list border hide fix2">
+                <div class="list d-flex ">
+                    <i class="ri-home-4-line" style="color: blue;"></i>
+                    <a href="index.html"><p>Dashboard</p>  </a> 
+                </div>
+                <div class="list d-flex">
+                    <i class="ri-mail-line" style="color: brown;"></i>
+                    <a href=""><p>Email</p></a>   
+                </div>
+                <div class="list d-flex">
+                    <i class="ri-compass-discover-line" style="color: blue;"></i>
+                    <a href=""><p>Compose</p></a>   
+                </div>
+                <div class="list d-flex ">
+                    <i class="ri-calendar-line" style="color: red;"></i>
+                    <a href="calender.html"><p>Calender</p></a>   
+                </div>
+                <div class="list d-flex">
+                    <i class="ri-message-2-line" style="color: purple;"></i>
+                    <a href=""><p>Chat</p> </a>  
+                </div>
+                <div class="list d-flex ">
+                    <i class="ri-bar-chart-fill" style="color: blueviolet;"></i>
+                    <a href="chart.html"><p>Charts</p></a>   
+                </div>
+                <div class="list d-flex ">
+                    <i class="ri-edit-fill" style="color: blue;"></i>
+                    <a href=""><p>Forms</p></a>   
+                </div>
+                <div class="list d-flex ">
+                    <i class="ri-palette-line" style="color: red;"></i>
+                    <a href=""><p>UI Elements</p></a>   
+                </div>
+                <div class="list d-flex ">
+                    <i class="ri-table-line" style="color: orange;"></i>
+                    <a href=""><p>Table</p> </a>  
+                </div>
+                <div class="list d-flex ">
+                    <i class="ri-map-2-line" style="color: purple;"></i>
+                    <a href=""><p>Maps</p> </a>  
+                </div>
+                <div class="list d-flex ">
+                    <i class="ri-pages-line" style="color: red;"></i>
+                    <a href=""><p>Pages</p> </a>  
+                </div>
+                <div class="list d-flex ">
+                    <i class="ri-stairs-line" style="color: green;"></i>
+                    <a href=""><p>Multiple levels</p>   </a>
+                </div>
+            </div>
+    
+            <div class="charts">
+                <div class="main-chart">
+
+                <div class="chart-first">
+                    <div class="chart-1">
+                        <div id="chart-01">
+                        </div>
+                    </div>
+
+                  <div class="chart-2">
+                        <div id="chart-02">
+                        </div>
+                  </div>
+                </div>
+
+                <div class="chart">
+                    <div class="sub-chart">
+                        <div id="sub-chart">
+
+                        </div>
+                    </div>
+                </div>
+
+               </div>
+            </div>
+
+           
+    
+        </div>
+        
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+     
+    
+    
+    
+        <script>
+            $("#logo").click(function(){
+                $(".admin-list").toggleClass("hide")
+                $(".admin1").toggleClass("hide");
+                $(".fix3").toggleClass("fixing3")
+            });
+    
+    
+        </script>
+    
+        <script>
+          $("#user1").click(function(){
+            $(".jhon-click").toggle()
+          })
+        </script>
+
+        <script>
+             var options = {
+          series: [{
+          name: 'Sales',
+          data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5]
+        }],
+          chart: {
+          height: 350,
+          type: 'line',
+        },
+        forecastDataPoints: {
+          count: 7
+        },
+        stroke: {
+          width: 5,
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ['1/11/2000', '2/11/2000', '3/11/2000', '4/11/2000', '5/11/2000', '6/11/2000', '7/11/2000', '8/11/2000', '9/11/2000', '10/11/2000', '11/11/2000', '12/11/2000', '1/11/2001', '2/11/2001', '3/11/2001','4/11/2001' ,'5/11/2001' ,'6/11/2001'],
+          tickAmount: 10,
+          labels: {
+            formatter: function(value, timestamp, opts) {
+              return opts.dateFormatter(new Date(timestamp), 'dd MMM')
+            }
+          }
+        },
+        title: {
+          text: 'Forecast',
+          align: 'left',
+          style: {
+            fontSize: "16px",
+            color: '#666'
+          }
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'dark',
+            gradientToColors: [ '#FDD835'],
+            shadeIntensity: 1,
+            type: 'horizontal',
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [0, 100, 100, 100]
+          },
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-01"), options);
+        chart.render();
+        </script>
+
+        <script>
+             var options = {
+          series: [
+          {
+            data: [
+              {
+                x: '2008',
+                y: [2800, 4500]
+              },
+              {
+                x: '2009',
+                y: [3200, 4100]
+              },
+              {
+                x: '2010',
+                y: [2950, 7800]
+              },
+              {
+                x: '2011',
+                y: [3000, 4600]
+              },
+              {
+                x: '2012',
+                y: [3500, 4100]
+              },
+              {
+                x: '2013',
+                y: [4500, 6500]
+              },
+              {
+                x: '2014',
+                y: [4100, 5600]
+              }
+            ]
+          }
+        ],
+          chart: {
+          height: 350,
+          type: 'rangeBar',
+          zoom: {
+            enabled: false
+          }
+        },
+        plotOptions: {
+          bar: {
+            isDumbbell: true,
+            columnWidth: 3,
+            dumbbellColors: [['#008FFB', '#00E396']]
+          }
+        },
+        legend: {
+          show: true,
+          showForSingleSeries: true,
+          position: 'top',
+          horizontalAlign: 'left',
+          customLegendItems: ['Product A', 'Product B']
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            type: 'vertical',
+            gradientToColors: ['#00E396'],
+            inverseColors: true,
+            stops: [0, 100]
+          }
+        },
+        grid: {
+          xaxis: {
+            lines: {
+              show: true
+            }
+          },
+          yaxis: {
+            lines: {
+              show: false
+            }
+          }
+        },
+        xaxis: {
+          tickPlacement: 'on'
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-02"), options);
+        chart.render();
+      
+        </script>
+
+        <script>
+             var options = {
+          series: [{
+          name: 'Website Blog',
+          type: 'column',
+          data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+        }, {
+          name: 'Social Media',
+          type: 'line',
+          data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+        }],
+          chart: {
+          height: 350,
+          type: 'line',
+        },
+        stroke: {
+          width: [0, 4]
+        },
+        title: {
+          text: 'Traffic Sources'
+        },
+        dataLabels: {
+          enabled: true,
+          enabledOnSeries: [1]
+        },
+        labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
+        yaxis: [{
+          title: {
+            text: 'Website Blog',
+          },
+        
+        }, {
+          opposite: true,
+          title: {
+            text: 'Social Media'
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#sub-chart"), options);
+        chart.render();
+      
+        </script>
+
+</body>
+</html>

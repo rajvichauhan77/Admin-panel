@@ -25,6 +25,23 @@
         width: 100%;
        
     }
+
+    .c1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .c2{
+        width: 100%;
+    }
+
+    .chart-1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .chart-2{
+        width: 100%;
+    }
 }
 
 @media (max-width:320px){
@@ -66,5 +83,55 @@
 @media(max-width:575px){
     .chart-container{
         width: fit-content;
+    }
+
+    .calender{
+        padding: 0;
+       
+    }
+
+    .c-main{
+        padding: 0;
+    }
+
+    .c2{
+        padding: 0;
+    }
+    #frame{
+        width: fit-content;
+        padding: 0;
+        
+    }
+
+    .c1{
+        padding: 0;
+    }
+
+    .charts{
+        padding: 0%;
+    }
+    .main-chart{
+        padding: 0;
+    }
+    .chart-first{
+        padding: 0;
+    }
+    .chart-1{
+        padding: 0;
+    }
+    .chart-2{
+        padding: 0;
+    }
+
+    .chart{
+        padding: 0;
+    }
+    .sub-chart{
+        padding: 0;
+       
+    }
+    #sub-chart{
+        padding: 0;
+        
     }
 }
